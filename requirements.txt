@@ -1,0 +1,9 @@
+dash==1.18.1
+dash_table
+plotly
+pandas==1.0.3
+numpy
+s3fs=0.4.2
+flask
+tweepy
+boto3

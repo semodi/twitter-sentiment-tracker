@@ -10,14 +10,12 @@ import s3fs
 import json
 import requests
 import plotly.express as px
-import dash_table
-import numpy as np
 import pandas as pd
 import re
+from config import *
 ORANGE = '#fec036'
 DGREY = '#2b2b2b'
 GREY = '#303030'
-TESTING=True
 if TESTING:
     tags = ['google','netflix']
     colors = {t: px.colors.qualitative.Plotly[i] for i,t in enumerate(tags)}
