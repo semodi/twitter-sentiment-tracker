@@ -1,6 +1,6 @@
 # Twitter Sentiment Tracker
 
-![](../assets/img/tst/title.png)
+![](title.png)
 
 A web-app to discover cultural and market trends by tracking sentiments towards key topics expressed on twitter. The app uses Twitter's filtered search API along with the textblob python library to extract tweets and analyze users' sentiments.
 
@@ -43,7 +43,7 @@ from within the app.
 
 ## ETL pipeline
 
-![](../assets/img/tst/twitterstream_transparent.png)
+![](etl.png)
 
 The web front-end in the form of a Plotly dashboard is hosted on an Amazon EC2 instance. At the same time, a flask server in charge of administrating active twitter streams is run on a separate EC2 instance. If a new tag is created on the web app, this server will start a corresponding stream which is then sent to and handled by Amazon Kinesis. To ensure scalability to data of high volume and velocity, the stream is ingested on the big data platform Databricks where the ETL workflow is handled by Apache Spark. In the course of this workflow, the following steps are taken:
 
